@@ -684,7 +684,7 @@
 		// 24. smooth scroll
 		if (device_width > 576) {
 			const smoother = ScrollSmoother.create({
-			  smooth: 2.2,
+			  smooth: 0.8,
 			  effects: device_width < 992 ? false : true,
 			  smoothTouch: false,
 			  normalizeScroll: false,
