@@ -3093,7 +3093,7 @@ i {
 }
 .offer .offer__cta .offer__cta-single {
   position: relative;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 .offer .offer__cta .offer__cta-single:nth-last-of-type(1) {
   margin-bottom: 0px;
@@ -7234,7 +7234,7 @@ i {
 }
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
+    max-width: 1320px;
   }
   .banner-four .banner-four__title h1 {
     font-size: 150px;
