@@ -230,6 +230,10 @@
 				var $grid = $(".masonry-grid").isotope({
 					itemSelector: ".grid-item-main",
 					layoutMode: "fitRows",
+					fitRows: {
+						gutter: 10
+					}
+					
 				});
 
 				var filterFns = {
@@ -690,7 +694,7 @@
 			  normalizeScroll: false,
 			  ignoreMobileResize: true,
 			});
-		  }
+		}
 
 		// 25. skill bar progress
 		$("[data-percent]").each(function() {

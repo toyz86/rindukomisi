@@ -2952,11 +2952,137 @@ i {
 }
 
 .filter-item-space {
-  margin-bottom: 30px;
+  margin: 15px 7.5px;
 }
 
 .masonry-grid {
   margin-bottom: -30px;
+}
+.masonry-grid .portfolio__single {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.masonry-grid .portfolio__single::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 0px;
+  height: 0px;
+  transition: var(--transition);
+  background-color: var(--primary-color);
+}
+.masonry-grid .portfolio__single::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  height: 0px;
+  width: 0px;
+  transition: var(--transition);
+  background-color: var(--primary-color);
+}
+.masonry-grid .portfolio__single a {
+  width: 100%;
+}
+.masonry-grid .portfolio__single img {
+  width: 100%;
+  min-height: 300px;
+}
+.masonry-grid .portfolio__single .portfolio__single-content {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 40px;
+  background-color: var(--white);
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  transform: translateY(-160%) scale(1.4);
+  transition: var(--transition);
+  max-width: 90%;
+}
+.masonry-grid .portfolio__single .portfolio__single-content a {
+  width: auto;
+}
+.masonry-grid .portfolio__single .portfolio__single-content a i {
+  font-size: 56px;
+  color: var(--primary-color);
+}
+.masonry-grid .portfolio__single .portfolio__single-content h4 a {
+  color: var(--black);
+  font-weight: 600;
+}
+.masonry-grid .portfolio__single .portfolio__single-content h4 a:hover {
+  color: var(--primary-color);
+}
+.masonry-grid .portfolio__single:hover::before {
+  width: 1px;
+  height: calc(100% - 40px);
+}
+.masonry-grid .portfolio__single:hover::after {
+  height: 1px;
+  width: calc(100% - 40px);
+}
+.masonry-grid .portfolio__single:hover .portfolio__single-content {
+  transform: translateY(0px) scale(1);
+}
+.masonry-grid .portfolio__single-active::before {
+  width: 1px;
+  height: calc(100% - 40px);
+}
+.masonry-grid .portfolio__single-active::after {
+  height: 1px;
+  width: calc(100% - 40px);
+}
+.masonry-grid .portfolio__single-active .portfolio__single-content {
+  transform: translateY(0px) scale(1);
+}
+.masonry-grid .portfolio__single-alt-wrapper {
+  background-color: black;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  height: 100%;
+}
+.masonry-grid .portfolio__single-alt {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  z-index: 1;
+  min-height: 300px;
+}
+.masonry-grid .portfolio__single-alt h4 {
+  text-transform: uppercase;
+}
+.masonry-grid .portfolio__single-alt .arr {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  font-size: 120px;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+.masonry-grid .portfolio__single-alt img {
+  max-width: 25%;
+}
+.masonry-grid .portfolio__single-alt .dot-one {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: -1;
+}
+.masonry-grid .portfolio__single-alt .dot-two {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: -1;
 }
 
 .portfolio-three {
@@ -5763,6 +5889,10 @@ i {
   z-index: 99;
 }
 
+.grid-item-main {
+  width: 45.35%;
+}
+
 /* ==== 
  --------- (5.0) all sections styles end ---------
  ==== */
@@ -7218,6 +7348,12 @@ i {
   .footer-four .cta-t a {
     padding: 30px 20px;
     gap: 20px;
+  }
+  .grid-item-main {
+    width: 44.7%;
+  }
+  .filter-item-space {
+    margin: 15px 0;
   }
 }
 @media only screen and (max-width: 424.98px) {
