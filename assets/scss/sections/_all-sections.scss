@@ -563,6 +563,11 @@
     .offer__cta-single {
       position: relative;
       margin-bottom: 35px;
+
+      button {
+        font-size: 24px;
+      }
+
       &:nth-last-of-type(1) {
         margin-bottom: 0px;
       }

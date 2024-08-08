@@ -3095,6 +3095,9 @@ i {
   position: relative;
   margin-bottom: 35px;
 }
+.offer .offer__cta .offer__cta-single button {
+  font-size: 24px;
+}
 .offer .offer__cta .offer__cta-single:nth-last-of-type(1) {
   margin-bottom: 0px;
 }
