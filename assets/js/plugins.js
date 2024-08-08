@@ -100,6 +100,15 @@
 			});
 		}
 
+		$('.image-link').magnificPopup({
+			type: 'image',
+			mainClass: 'mfp-fade', // Apply the fade effect
+			removalDelay: 300, // Delay in milliseconds before popup is removed
+			gallery: {
+				enabled: true // Enable gallery mode
+			}
+			});	
+
 		// 02. portfolio text slider
 		$(".portfolio__text-slider").not(".slick-initialized").slick({
 			slidesToShow: 2,
@@ -693,8 +702,21 @@
 			  smoothTouch: false,
 			  normalizeScroll: false,
 			  ignoreMobileResize: true,
+				pinType: "transform"
 			});
 		}
+
+		gsap.to(".portfolio-two__filter-btn", {
+			scrollTrigger: {
+				trigger: ".portfolio-two__filter-btn",
+				start: "top 15%",
+				end: "bottom top",
+				pin: true, // Makes the element sticky
+				pinType: "transform", // This is crucial for compatibility with ScrollSmoother
+				scrub: true,
+			}
+		});
+		
 
 		// 25. skill bar progress
 		$("[data-percent]").each(function() {

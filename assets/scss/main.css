@@ -5893,6 +5893,37 @@ i {
   width: 45.35%;
 }
 
+.sponsor__slider-item img {
+  filter: sepia(1);
+}
+
+/* Custom animation for the popup */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; /* Background fade-in effect */
+}
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; /* Background fade-out effect */
+}
+
+.mfp-fade.mfp-wrap {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready {
+  opacity: 1; /* Popup fade-in effect */
+}
+
+.mfp-fade.mfp-wrap.mfp-removing {
+  opacity: 0; /* Popup fade-out effect */
+}
+
 /* ==== 
  --------- (5.0) all sections styles end ---------
  ==== */
