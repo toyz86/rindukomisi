@@ -704,18 +704,18 @@
 			  ignoreMobileResize: true,
 				pinType: "transform"
 			});
+			gsap.to(".portfolio-two__filter-btn", {
+				scrollTrigger: {
+					trigger: ".portfolio-two__filter-btn",
+					start: "top 15%",
+					end: "bottom top",
+					pin: true, // Makes the element sticky
+					pinType: "transform", // This is crucial for compatibility with ScrollSmoother
+					scrub: true,
+				}
+			});
 		}
 
-		gsap.to(".portfolio-two__filter-btn", {
-			scrollTrigger: {
-				trigger: ".portfolio-two__filter-btn",
-				start: "top 15%",
-				end: "bottom top",
-				pin: true, // Makes the element sticky
-				pinType: "transform", // This is crucial for compatibility with ScrollSmoother
-				scrub: true,
-			}
-		});
 		
 
 		// 25. skill bar progress

@@ -7386,8 +7386,32 @@ i {
   .filter-item-space {
     margin: 15px 0;
   }
+  .offer__cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .offer__cta .offer__cta-single {
+    margin: 0 10px 30px;
+    text-align: center;
+  }
+  .offer__cta .offer__cta-single button {
+    font-size: 18px !important;
+  }
+  .portfolio__single img {
+    min-height: 200px !important;
+  }
+  .section__header {
+    margin-bottom: 10px;
+  }
 }
 @media only screen and (max-width: 424.98px) {
+  .grid-item-main {
+    width: 43%;
+  }
+  .sub-title {
+    margin-bottom: 10px !important;
+  }
   .banner-five .banner-five__single {
     padding: 0px 15px;
   }
